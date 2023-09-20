@@ -6,8 +6,18 @@
 <body>
     <h1>Simple Adder</h1>
     <button onclick="add()">Add</button>
-    
+    <input id="number1" type="number" placeholder="Enter a number">
+    <div id="simpleadder"></div>
     <script>
+        function addnumbers() {
+            const number1Input = 
+            document.getElementById("number1").value;
+            //you need a .value so that the value from the input can be accessed 
+            const number2Input = 
+            document.getElementById("number2").value;
+            var total = parseFloat(number1Input) + parseFloat(number2Input);
+            document.getElementById("simpleadder").textContent = "The total is " + total;
+        }
        
     </script>
 </body>
