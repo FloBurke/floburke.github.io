@@ -11,6 +11,7 @@
     <input id="grade3" type="number" placeholder="Enter your implementation grade">
     <input id="grade4" type="number" placeholder="Enter your evaluation grade">
     <div id="simpleadder"></div>
+    <div id="gradeResult"></div> <!--new div for displaying result-->
     <script>
         function addnumbers() {
             const grade1Input = parseFloat(document.getElementById("grade1").value);
@@ -20,7 +21,9 @@
             
             var total = grade1Input + grade2Input + grade3Input + grade4Input;
             document.getElementById("simpleadder").textContent = "The total mark is " + total;
+
             var gradeResult = document.getElementById("gradeResult");
+
             if (total >= 80){
                 gradeResult.textContent = "You got an A*";
             } else if (total < 80 && total >= 67){
