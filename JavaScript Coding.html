@@ -13,18 +13,14 @@
     <div id="simpleadder"></div>
     <script>
         function addnumbers() {
-            const grade1Input = 
-            document.getElementById("grade1").value;
-            const grade2Input = 
-            document.getElementById("grade2").value;
-            const grade3Input = 
-            document.getElementById("grade3").value;
-            const grade4Input = 
-            document.getElementById("grade4").value;
-            var total = parseFloat(grade1Input) + parseFloat(grade2Input) + parseFloat(grade3Input) + parseFloat(grade4Input);
+            const grade1Input = parseFloat(document.getElementById("grade1").value);
+            const grade2Input = parseFloat(document.getElementById("grade2").value);
+            const grade3Input = parseFloat(document.getElementById("grade3").value);
+            const grade4Input = parseFloat(document.getElementById("grade4").value);
+            
+            var total = grade1Input + grade2Input + grade3Input + grade4Input;
             document.getElementById("simpleadder").textContent = "The total mark is " + total;
-            }
-       
+        }
     </script>
 </body>
-</html>   
+</html>
