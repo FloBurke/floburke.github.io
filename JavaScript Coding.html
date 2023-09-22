@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Adder</title>
+    <title>Portfolio Challenge</title>
 </head>
 <body>
-    <h1>Simple Adder</h1>
+    <h1>Portfolio Grade</h1>
     <button onclick="addnumbers()">Add</button>
-    <input id="number1" type="number" placeholder="Enter a number">
-    <input id="number2" type="number" placeholder="Enter a number">
+    <input id="grade1" type="number" placeholder="Enter your analysis grade">
+    <input id="grade2" type="number" placeholder="Enter your design grade">
+    <input id="grade3" type="number" placeholder="Enter your implementation grade">
+    <input id="grade4" type="number" placeholder="Enter your evaluation grade">
     <div id="simpleadder"></div>
     <script>
         function addnumbers() {
-            const number1Input = 
-            document.getElementById("number1").value;
-            //you need a .value so that the value from the input can be accessed 
-            const number2Input = 
-            document.getElementById("number2").value;
-            var total = parseFloat(number1Input) + parseFloat(number2Input);
-            document.getElementById("simpleadder").textContent = "The total is " + total;
-        }
+            const grade1Input = 
+            document.getElementById("grade1").value;
+            const grade2Input = 
+            document.getElementById("grade2").value;
+            const grade3Input = 
+            document.getElementById("grade3").value;
+            const grade4Input = 
+            document.getElementById("grade4").value;
+            var total = parseFloat(grade1Input) + parseFloat(grade2Input) + parseFloat(grade3Input) + parseFloat(grade4Input);
+            document.getElementById("simpleadder").textContent = "The total mark is " + total;
+            }
        
     </script>
 </body>
