@@ -20,24 +20,25 @@
             
             var total = grade1Input + grade2Input + grade3Input + grade4Input;
             document.getElementById("simpleadder").textContent = "The total mark is " + total;
+            var gradeResult = document.getElementById("gradeResult");
             if (total >= 80){
-                console.log("You got an A*")
+                gradeResult.textContent = "You got an A*";
             } else if (total < 80 && total >= 67){
-                console.log("You got an A")
+                gradeResult.textContent = "You got an A";
             } else if (total < 67 && total >= 54){
-                console.log("You got an B")
+                gradeResult.textContent = "You got an B";
             } else if (total < 54 && total >= 41){
-                console.log("You got an C")
+                gradeResult.textContent = "You got an C";
             } else if (total < 41 && total >= 31){
-                console.log("You got an D")
+                gradeResult.textContent = "You got an D";
             } else if (total < 31 && total >= 22){
-                console.log("You got an E")
+                gradeResult.textContent = "You got an E";
             } else if (total < 22 && total >= 13){
-                console.log("You got an F")
+                gradeResult.textContent = "You got an F";
             } else if (total < 13 && total >= 4){
-                console.log("You got an G")
+                gradeResult.textContent = "You got an G";
             } else if (total < 4){
-                console.log("You got an U")
+                gradeResult.textContent = "You got an U";
             }
         }
     </script>
