@@ -6,12 +6,9 @@
 <body>
     <h1>Portfolio Grade</h1>
     <button onclick="addnumbers()">Add</button>
-    <input id="grade1" type="number" placeholder="Enter your analysis grade">
-    <input id="grade2" type="number" placeholder="Enter your design grade">
-    <input id="grade3" type="number" placeholder="Enter your implementation grade">
-    <input id="grade4" type="number" placeholder="Enter your evaluation grade">
+    <input id="howmany" type="number" placeholder="How many numbers?">
     <div id="simpleadder"></div>
-    <div id="gradeResult"></div> <!--new div for displaying result-->
+    <div id="gradeResult"></div> <!--new div for displaying-->
     <script>
         function addnumbers() {
             const grade1Input = parseFloat(document.getElementById("grade1").value);
@@ -24,25 +21,6 @@
 
             var gradeResult = document.getElementById("gradeResult");
 
-            if (total >= 80){
-                gradeResult.textContent = "You got an A*";
-            } else if (total < 80 && total >= 67){
-                gradeResult.textContent = "You got an A";
-            } else if (total < 67 && total >= 54){
-                gradeResult.textContent = "You got an B";
-            } else if (total < 54 && total >= 41){
-                gradeResult.textContent = "You got an C";
-            } else if (total < 41 && total >= 31){
-                gradeResult.textContent = "You got an D";
-            } else if (total < 31 && total >= 22){
-                gradeResult.textContent = "You got an E";
-            } else if (total < 22 && total >= 13){
-                gradeResult.textContent = "You got an F";
-            } else if (total < 13 && total >= 4){
-                gradeResult.textContent = "You got an G";
-            } else if (total < 4){
-                gradeResult.textContent = "You got an U";
-            }
         }
     </script>
 </body>
