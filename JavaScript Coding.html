@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio Challenge</title>
+    <title>Average Calculator</title>
 </head>
 <body>
-    <h1>Portfolio Grade</h1>
-    <button onclick="addnumbers()">Add</button>
-    <input id="howmany" type="number" placeholder="How many numbers?">
-    <div id="simpleadder"></div>
-    <div id="gradeResult"></div> <!--new div for displaying-->
+    <h1>Average Calculator</h1>
+    <p>Enter the number of values you would like to input to average</p>
+    <input id="howmanyvalues" type="number" placeholder="How many values?">
+    <button onclick="findAverage()">Find Average</button>
     <script>
-        function addnumbers() {
-            const grade1Input = parseFloat(document.getElementById("grade1").value);
-            const grade2Input = parseFloat(document.getElementById("grade2").value);
-            const grade3Input = parseFloat(document.getElementById("grade3").value);
-            const grade4Input = parseFloat(document.getElementById("grade4").value);
-            
-            var total = grade1Input + grade2Input + grade3Input + grade4Input;
-            document.getElementById("simpleadder").textContent = "The total mark is " + total;
-
-            var gradeResult = document.getElementById("gradeResult");
-
+        function findAverage(){
+            const howmanyvalues = parseInt(document, getElementById("howmanyvalues").value);
+            let total = 0;
+            for (let i = 1; i <= howmanyvalues; i++) { 
+                const value = parseFloat(prompt("Enter Value $(i+1):"));
+                
+            }
         }
     </script>
 </body>
 </html>
+        
