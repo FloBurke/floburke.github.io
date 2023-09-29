@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Average Calculator</title>
+    <title>Compound Interest</title>
 </head>
 <body>
-    <h1>Average Calculator</h1>
+    <h1>Compound Interest</h1>
     <p>Enter the number of values you would like to input to average</p>
-    <input id="howmanyvalues" type="number" placeholder="How many values?">
+    <input id="current" type="number" placeholder="What is your current balance?">
+    <input id="rate" type="number" placeholder="What is the interest rate as a decimal?">
+    <input id="desire" type="number" placeholder="What is your desired balance?">
     <button onclick="findAverage()">Find Average</button>
     <script>
         function findAverage(){
-            const howmanyvalues = parseInt(document, getElementById("howmanyvalues").value);
+            const howmanyvalues = parseInt(document.getElementById("howmanyvalues").value);
             let total = 0;
-            for (let i = 0; i <= howmanyvalues; i++) { 
-                const value = parseFloat(prompt("Enter Value $(i+1):"));
-               if(!isNaN(value)) {
-                total += value;
-               } else {
-                alert("Invalid input. PLease enter a valid number.");
-                i--;
+            for (let i = 0; i < howmanyvalues; i++) { 
+                const value = parseFloat(prompt("Enter Value " +(i + 1) + ":"));
+                if(!isNaN(value)) {
+                    total += value;
+                } else {
+                    alert("Invalid input. PLease enter a valid number.");
+                    i--;
                }
             }
             const average = total / howmanyvalues;
-            alert("The average of ${howmanyvalues} numbers is: ${average.toFixed(2)}");
+            alert("The average of " + howmanyvalues + "numbers is: " + average.toFixed(2));
         }
     </script>
 </body>
