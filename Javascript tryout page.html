@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dynamic Input Fields</title>
+    <title>Average Calculator</title>
 </head>
 <body>
-    <h1>Add Inputs</h1>
-    <button onclick="addInput()">Add Input</button>
-    <form id="inputForm">
-        <!-- Initial input field -->
-        <div>
-            <input type="text" name="input1" placeholder="Enter input">
-        </div>
-    </form>
+    <h1>Average Calculator</h1>
+    <p>Enter the number of values you would like to input to average</p>
+    <input id="howmanyvalues" type="number" placeholder="How many values?">
+    <button onclick="findAverage()">Find Average</button>
     <script>
-        let inputCount = 1; // Initialize input count
+        function findAverage() {
+            const howmanyvalues = parseInt(document.getElementById("howmanyvalues").value);
+            let total = 0;
 
-        function addInput() {
-            inputCount++; // Increment input count
-            const form = document.getElementById("inputForm");
-            const newInputDiv = document.createElement("div");
-            const newInput = document.createElement("input");
-            newInput.setAttribute("type", "text");
-            newInput.setAttribute("name", "input" + inputCount);
-            newInput.setAttribute("placeholder", "Enter input");
-            newInputDiv.appendChild(newInput);
-            form.appendChild(newInputDiv);
+            for (let i = 0; i < howmanyvalues; i++) { // Use < instead of <=
+                const value = parseFloat(prompt("Enter Value " + (i + 1) + ":"));
+                if (!isNaN(value)) { // Check for valid input
+                    total += value;
+                } else {
+                    alert("Invalid input. Please enter a valid number.");
+                    i--; // Decrement i to retry the same input
+                }
+            }
+
+            const average = total / howmanyvalues;
+            alert("The average of " + howmanyvalues + " numbers is: " + average.toFixed(2));
         }
     </script>
 </body>
