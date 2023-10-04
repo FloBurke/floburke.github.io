@@ -5,4 +5,23 @@ h1{
 
 h2{
     text-align: center;
+    color: darkred;
+    font-size: 35px;
+}
+.bg-1{
+    background-color: rgba(166, 12, 12, 0.887);
+    color: white;
+}
+h3{
+    font-size: 45px;
+}
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+p{
+    font-size: 15px;
+    color: black;
 }
