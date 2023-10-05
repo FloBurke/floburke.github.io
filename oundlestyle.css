@@ -57,3 +57,19 @@ h6{
 .members{
     line-height:2;
 }
+h7{
+    color: darkred;
+    font-size: 35px;
+    padding-left: 200px;
+}
+.quotes{
+    padding-left: 200px;
+    padding-right:200px;
+}
+.quote{
+    font-size: 40px;
+}
+.name{
+    font-size:15px;
+    color: grey;
+}

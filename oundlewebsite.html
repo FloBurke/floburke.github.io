@@ -119,6 +119,30 @@
             <br>
             <img src="https://www.oundlechoralsociety.org.uk/images/Elizabeth.png" alt="arkell"
             width="280" height="350">
+            <button id="openModalButton">Open Modal</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                <span class="close" id="closeModalButton">&times;</span>
+                <p>Elizabeth was a music scholar at Ardingly College and organ scholar at Sidney Sussex College, Cambridge, where she read for a degree in music. A Fellow of the Royal College of Organists, Elizabeth is an experienced organist and accompanist, having worked with many choirs and choral societies. Her career in music education has seen her teach in schools in Berkshire, Hampshire and Staffordshire, and she is currently Head of Academic Music and School Organist at Oundle School. Elizabeth is a senior examiner for Pearson GCSE Music and also an examiner for the ABRSM. Elizabeth has been Organist and Director of Music at St John’s in Peterborough since December 2014 and has accompanied Oundle and District Choral Society since 2017.</p>
+                </div>
+            </div>
+            <script>
+                const openModalButton = document.getElementById("openModalButton");
+                const closeModalButton = document.getElementById("closeModalButton");
+                const modal = document.getElementById("myModal");
+                openModalButton.addEventListener("click", () => {
+                modal.style.display = "block";
+                });
+                closeModalButton.addEventListener("click", () => {
+                modal.style.display = "none";
+                });
+                document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                modal.style.display = "none";
+                }
+                });
+            </script>
         </div>
         <div class="col-sm-4">
             <h5><b>Members</b></h5>
@@ -139,6 +163,17 @@
     </div>
     </div>
 </div>
-
+<div class="quotes">
+    <br>
+    <h7>Why we enjoy singing with ODCS</h7>
+    <p id="quote">"I enjoy singing with the choir because the practicing is pleasingly challenging with lovely results when it all comes together. And Quentin is a charismatic, humorous and talented leader."</p>
+    <p id="name">-Anne</p>
+    <p id="quote">"ODCS is the most friendly, relaxed and enjoyable choral society I have ever belonged to."</p>
+    <p id="name">-Trisha</p>
+    <p id="quote">"I love the thrill of singing in 4-part harmony. It gives me that tingling feeling!"</p>
+    <p id="name">-Clare</p>
+    <p id="quote">" Singing is the perfect form of exercise and relaxation, focussing your mind, whatever the day has thrown at you!"</p>
+    <p id="name">-Tessa</p>
+</div>
 </body>
 </html>
