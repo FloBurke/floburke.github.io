@@ -1,6 +1,8 @@
-h1{
+marquee{
     text-align: center;
     color: darkred;
+    font-size:35px;
+    font-weight: bolder;
 }
 
 h2{
@@ -57,19 +59,22 @@ h6{
 .members{
     line-height:2;
 }
-h7{
-    color: darkred;
-    font-size: 35px;
-    padding-left: 200px;
-}
 .quotes{
     padding-left: 200px;
     padding-right:200px;
 }
-.quote{
-    font-size: 40px;
+.blockquote{
+    font-size: 20px;
 }
-.name{
-    font-size:15px;
-    color: grey;
+.music{
+    background-color: rgba(166, 12, 12, 0.887);
+    color: white;
+    padding-left: 75px;
+    padding-top: 50px;
+    padding-right: 50px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+#piece{
+    color:white;
 }
