@@ -78,3 +78,9 @@ h6{
 #piece{
     color:white;
 }
+.contacts{
+    padding-top:50px;
+}
+#emaillink{
+    color: darkred;
+}
