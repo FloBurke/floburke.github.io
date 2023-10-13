@@ -1,3 +1,25 @@
+ul.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    background-color: rgba(166, 12, 12, 0.887);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 1000;
+}
+ul.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+ul.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+}
+ul.navbar li a:hover {
+    color: blue;
+}
 marquee{
     text-align: center;
     color: darkred;
@@ -78,9 +100,13 @@ h6{
 #piece{
     color:white;
 }
-.contacts{
+.privacy{
     padding-top:50px;
+    padding-bottom:50px;
 }
 #emaillink{
     color: darkred;
+}
+#logoimage{
+    padding-left: 425px;
 }
